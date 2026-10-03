@@ -27,7 +27,9 @@ foreach($module in $modules){
         @(& git -C $moduleSource status --porcelain --untracked-files=all).Count){throw 'Initialize and verify pinned public submodules first'}
     if(-not (Test-Path -LiteralPath $module.Target)){
         New-Item -ItemType Directory -Path (Split-Path -Parent $module.Target) -Force | Out-Null
-        & git clone --config core.longpaths=true --no-checkout --no-hardlinks $moduleSource $module.Target
+        # Upstream resource/license hashes were inventoried on Windows/CRLF.
+        # Set this locally on newly created caches, never in the user's global Git config.
+        & git clone --config core.longpaths=true --config core.autocrlf=true --no-checkout --no-hardlinks $moduleSource $module.Target
         if($LASTEXITCODE -ne 0){throw 'Public source clone failed'}
         & git -C $module.Target remote set-url origin $module.Origin
         if($LASTEXITCODE -ne 0){throw 'Cannot set inventoried source origin'}

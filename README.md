@@ -18,7 +18,8 @@ cd glp-ps2
 ```
 
 Use o clone recursivo: o ZIP automático do GitHub não inclui as fontes dos
-submódulos. O conjunto é identificado pela tag `emuorbit-0.3.15-ps2-source`.
+submódulos. A receita atual é identificada pela tag `emuorbit-0.3.15-ps2-source-v2`;
+a tag inicial continua preservada.
 
 Os submódulos fixam revisões, não acompanham a branch mais recente:
 
@@ -53,6 +54,12 @@ hashes dos arquivos, compila Android ARM64/API 26 com `c++_static`, e produz:
 - `dist/libarmsx2_core.so`: core Libretro com as derivações usadas no produto.
 - `dist/libemuorbit_armsx2.so`: ponte JNI/Vulkan.
 - `dist/resources`: shaders, GameIndex, patches e fontes inventariados.
+
+Os hashes de resources/avisos upstream desta entrega foram inventariados com
+checkout Windows/CRLF. A receita fixa `core.autocrlf=true` somente nos novos
+caches upstream, sem mudar a configuração global nem os bytes das entradas
+copiadas do EmuOrbit. Use um cache novo se um cache anterior tiver sido criado
+com outra política de finais de linha; não altere os hashes para ocultar isso.
 
 Não é gerado APK/AAB, não é embutida BIOS, e nenhum executável do app oficial
 é usado como entrada de build. Os probes de diagnóstico existem porque a
