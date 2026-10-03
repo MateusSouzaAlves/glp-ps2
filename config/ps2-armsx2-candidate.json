@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "role": "private-preflight-not-product-or-performance-certification",
+  "repository": "https://github.com/ARMSX2/ARMSX2.git",
+  "revision": "ae93e16a0cc4bad8d4679312e921b158b70a8131",
+  "release": "2.7.2",
+  "license_file": "COPYING.GPLv3",
+  "license_sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+  "core_spdx": "GPL-3.0-or-later",
+  "interface": "experimental-libretro",
+  "dependency_source": "tracked-Android-vendored-tree-plus-pinned-shaderc-DEPS",
+  "external_dependencies": [
+    {"name": "glslang", "repository": "https://github.com/KhronosGroup/glslang.git", "revision": "09c541ee5b22bbac307987b50d86ec2b4f683d75"},
+    {"name": "spirv-headers", "repository": "https://github.com/KhronosGroup/SPIRV-Headers.git", "revision": "465055f6c9128772e20082e893d974146acf7a02"},
+    {"name": "spirv-tools", "repository": "https://github.com/KhronosGroup/SPIRV-Tools.git", "revision": "e4bceacf59fdfe742047e94e41ef65a48999a0dd"}
+  ],
+  "android_recipe": "platforms/android/app/src/main/cpp",
+  "minimal_frontend": "pcsx2-libretro",
+  "toolchain_candidate": {
+    "ndk": "29.0.14206865",
+    "cmake": "3.22.1",
+    "abi": "arm64-v8a",
+    "minimum_api_to_verify": 26,
+    "cpu_baseline_to_verify": "armv8-a",
+    "host_page_size_bytes": 4096,
+    "elf_alignment_bytes": 16384,
+    "runtime_16k_pages_verified": false,
+    "audio_rate_hz": 48000
+  },
+  "official_apk": {
+    "url": "https://github.com/ARMSX2/ARMSX2/releases/download/2.7.2/ARMSX2-2.7.2-a15-armv8.2-sdk35.apk",
+    "sha256": "a7a9a546a4cf82f6918573cecd10369ef05665af39792b68b35d20a898569a33",
+    "bytes": 98548918,
+    "package": "com.armsx2",
+    "version_code": 1696,
+    "minimum_api": 35,
+    "certificate_sha256": "df91c9ce39d3f53c9bab5f2c1e0820e761800c93f1805305b87e87486d244d5a",
+    "purpose": "separate-official-app-comparison-not-an-app-core-payload"
+  },
+  "required_paths": [
+    "common/CMakeLists.txt",
+    "pcsx2/CMakeLists.txt",
+    "pcsx2/ps2/BiosTools.cpp",
+    "pcsx2-libretro/Main.cpp",
+    "pcsx2-libretro/CMakeLists.txt",
+    "3rdparty/libretro/libretro.h",
+    "3rdparty/libretro/libretro_vulkan.h",
+    "platforms/android/app/src/main/cpp/cmake/SearchForStuff.cmake",
+    "platforms/android/app/src/main/cpp/3rdparty/shaderc/DEPS",
+    "bin/resources/GameIndex.yaml"
+  ],
+  "distribution_review": "pending-final-linked-source-and-notice-inventory"
+}

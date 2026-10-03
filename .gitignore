@@ -1,0 +1,15 @@
+/dist/
+*.so
+*.apk
+*.aab
+*.apks
+*.iso
+*.chd
+*.cue
+*.bin
+*.rom
+*.ps2
+*.sav
+*.jks
+*.keystore
+__pycache__/

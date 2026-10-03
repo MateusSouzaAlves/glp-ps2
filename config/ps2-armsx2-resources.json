@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "role": "private-runtime-resources-not-product-distribution-certification",
+  "revision": "ae93e16a0cc4bad8d4679312e921b158b70a8131",
+  "purpose": "Pinned core shader/GameDB/font closure; no frontend theme, ROM, BIOS or online patch download.",
+  "notice_review": "pending-final-font-and-transitive-linked-notices",
+  "files": [
+    {
+      "source": "platforms/android/app/src/main/assets/resources/patches.zip",
+      "destination": "patches.zip",
+      "bytes": 2007224,
+      "sha256": "8d95f1fba3acc83195bbac2d3e042b5f34c3c399856d9865e681d173f4cee609"
+    },
+    {
+      "source": "bin/resources/fonts/fa-solid-900.ttf",
+      "destination": "fonts/fa-solid-900.ttf",
+      "bytes": 414664,
+      "sha256": "8a2db53f7927abee48e52262090d99ced56a22d46752fba13c8f8782ce632d73"
+    },
+    {
+      "source": "bin/resources/fonts/promptfont-license",
+      "destination": "fonts/promptfont-license",
+      "bytes": 4392,
+      "sha256": "22298963b3d466f49b6b392a79b6233b80f2957198c75e67aba07cabe34b863c"
+    },
+    {
+      "source": "bin/resources/fonts/promptfont.otf",
+      "destination": "fonts/promptfont.otf",
+      "bytes": 263548,
+      "sha256": "92848f15d5eeea9fdfe87e272e4c9ea32f876b3665f5b27ef059711b7c757502"
+    },
+    {
+      "source": "bin/resources/fonts/Roboto-Regular-copyright",
+      "destination": "fonts/Roboto-Regular-copyright",
+      "bytes": 1328,
+      "sha256": "75c89b3ea9efa5b313a22d77f5648676cb8ed78939a172c526ffba81be819b48"
+    },
+    {
+      "source": "bin/resources/fonts/Roboto-Regular.ttf",
+      "destination": "fonts/Roboto-Regular.ttf",
+      "bytes": 305608,
+      "sha256": "797e35f7f5d6020a5c6ea13b42ecd668bcfb3bbc4baa0e74773527e5b6cb3174"
+    },
+    {
+      "source": "bin/resources/fonts/RobotoMono-Medium.ttf",
+      "destination": "fonts/RobotoMono-Medium.ttf",
+      "bytes": 86820,
+      "sha256": "4d901b560f20f455b3c82c6616b17b72360956747cb35c3808aa370052fe8e32"
+    },
+    {
+      "source": "bin/resources/GameIndex.yaml",
+      "destination": "GameIndex.yaml",
+      "bytes": 2767227,
+      "sha256": "2ebb72f500c06d61a96f6574d84c20f9753a8c5b5258b30a3d6c4b93a4e48971"
+    },
+    {
+      "source": "bin/resources/shaders/common/ffx_a_fsr1.h",
+      "destination": "shaders/common/ffx_a_fsr1.h",
+      "bytes": 184571,
+      "sha256": "c82c2092e0739121f9c26aee5b6afec765d44466f010518cbc43fdbc6dcbc7b7"
+    },
+    {
+      "source": "bin/resources/shaders/common/ffx_a.h",
+      "destination": "shaders/common/ffx_a.h",
+      "bytes": 163895,
+      "sha256": "513ab5039ea4ce8c7db93dd3c6403a0e2d7eafd07f07538afd916e7c5c7c86a3"
+    },
+    {
+      "source": "bin/resources/shaders/common/ffx_cas.h",
+      "destination": "shaders/common/ffx_cas.h",
+      "bytes": 64988,
+      "sha256": "b95ba23eaef5bde2392979ece9e39f066178335d41a1fc5b4fadf650770b5fa4"
+    },
+    {
+      "source": "bin/resources/shaders/common/ffx_fsr1.h",
+      "destination": "shaders/common/ffx_fsr1.h",
+      "bytes": 61509,
+      "sha256": "6d16231b29f0537f7737aebdb4affabba6da114247fecb8da93b060511659ce0"
+    },
+    {
+      "source": "bin/resources/shaders/common/fxaa.fx",
+      "destination": "shaders/common/fxaa.fx",
+      "bytes": 17930,
+      "sha256": "0978f59617f28960bf974ddea85af8c33e129ef5955551bdc46b902e3729e84e"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/cas.glsl",
+      "destination": "shaders/opengl/cas.glsl",
+      "bytes": 2477,
+      "sha256": "69afc645fa05a4eda661a89368136a5d8d55c8476c19215da4548bde4f8870bb"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/convert.glsl",
+      "destination": "shaders/opengl/convert.glsl",
+      "bytes": 16031,
+      "sha256": "19ac378e7dbe7cc936053f0973b3cd4346dbdf3d596e00a38bf9421db5110eb2"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/imgui.glsl",
+      "destination": "shaders/opengl/imgui.glsl",
+      "bytes": 675,
+      "sha256": "8bcfdbc4fb0e884ea15f6efe857cab6f468bec313107783ba8810a62b879ba52"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/interlace.glsl",
+      "destination": "shaders/opengl/interlace.glsl",
+      "bytes": 8413,
+      "sha256": "33be27535a04021e6e6efa6379c6fefdadb3329bc1311dac3d1ec436a48614d0"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/merge.glsl",
+      "destination": "shaders/opengl/merge.glsl",
+      "bytes": 612,
+      "sha256": "4290b9649e17f4b46d865727610de80a608a4ffb3c79e5a6caea67bf9ef307ba"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/present.glsl",
+      "destination": "shaders/opengl/present.glsl",
+      "bytes": 12206,
+      "sha256": "6a98464a94697c1dfbe6c6c37a2e318c40ea6162c726e3e8bcd34c94155d91ad"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/shadeboost.glsl",
+      "destination": "shaders/opengl/shadeboost.glsl",
+      "bytes": 1687,
+      "sha256": "342c622a942f59553ea2f8863f374149cd1d0aaa134d7fb2d152bd43324be82a"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/tfx_fs.glsl",
+      "destination": "shaders/opengl/tfx_fs.glsl",
+      "bytes": 45217,
+      "sha256": "566ab40bddbca43cb7c89ea1c2e3c34686a54a4505bce36e9f51bd0105e88e0a"
+    },
+    {
+      "source": "bin/resources/shaders/opengl/tfx_vgs.glsl",
+      "destination": "shaders/opengl/tfx_vgs.glsl",
+      "bytes": 15346,
+      "sha256": "e80164f6e5542bbfd3d490c67a3f8e923be85015af5e69e502adc2170d0ea405"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/cas.glsl",
+      "destination": "shaders/vulkan/cas.glsl",
+      "bytes": 2708,
+      "sha256": "40fe48d4bd5de3cc562f3c13d8f3611a88a39900a1e62df90c8090e9f43021a2"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/convert.glsl",
+      "destination": "shaders/vulkan/convert.glsl",
+      "bytes": 14952,
+      "sha256": "4151f643a154f9b8cbe0ca7a544f1cef9c8c20721fa2c264e7b5db63fd17a20a"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/fsr1.glsl",
+      "destination": "shaders/vulkan/fsr1.glsl",
+      "bytes": 3738,
+      "sha256": "ac17ee5a27fabb803f2d519c7bc8fc1781def51d6e0efb56e35448645f1b5284"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/imgui.glsl",
+      "destination": "shaders/vulkan/imgui.glsl",
+      "bytes": 833,
+      "sha256": "7431c6f117ba5fe0e2314f965abee21d3268d66b54a3083fa864fe59e90116ea"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/interlace.glsl",
+      "destination": "shaders/vulkan/interlace.glsl",
+      "bytes": 8792,
+      "sha256": "4d06403f1fddc042f8263f820a966bc92e9ab22a37f5aa16ecd91c34df45bfc8"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/merge.glsl",
+      "destination": "shaders/vulkan/merge.glsl",
+      "bytes": 805,
+      "sha256": "69b691476c590b540fa9415f97794b5e06d0ea260f5e7320a476d37eec61b858"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/present.glsl",
+      "destination": "shaders/vulkan/present.glsl",
+      "bytes": 10782,
+      "sha256": "3a957d0e5e79debbfe5ae83e6b03b5c57a93ffe31d842d490c759f3f5f8e3ed8"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/sgsr.glsl",
+      "destination": "shaders/vulkan/sgsr.glsl",
+      "bytes": 10621,
+      "sha256": "5c7b8980e736b51af9ab5c96c4f182a5b24208e1d570b7e681e82685e9d8730a"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/shadeboost.glsl",
+      "destination": "shaders/vulkan/shadeboost.glsl",
+      "bytes": 1991,
+      "sha256": "47b89e72d6a7da713bbe61bae8c46101a5bea8bab49abef0b89d251d15fae17f"
+    },
+    {
+      "source": "bin/resources/shaders/vulkan/tfx.glsl",
+      "destination": "shaders/vulkan/tfx.glsl",
+      "bytes": 61062,
+      "sha256": "8f35035daed5936ffb773ef9a9adb9d13faf998aa10a12831947812a7fd063b1"
+    },
+    {
+      "source": "bin/resources-overlay/armsx2_overrides.yaml",
+      "destination": "armsx2_overrides.yaml",
+      "bytes": 19668,
+      "sha256": "a594bbcd4fa432d89a8917ed570381469a5cb0ffceec9d3069b23ef2ce443d3b"
+    }
+  ]
+}

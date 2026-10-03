@@ -1,0 +1,12 @@
+[submodule "sources/armsx2"]
+	path = sources/armsx2
+	url = https://github.com/ARMSX2/ARMSX2.git
+[submodule "sources/dependencies/glslang"]
+	path = sources/dependencies/glslang
+	url = https://github.com/KhronosGroup/glslang.git
+[submodule "sources/dependencies/spirv-headers"]
+	path = sources/dependencies/spirv-headers
+	url = https://github.com/KhronosGroup/SPIRV-Headers.git
+[submodule "sources/dependencies/spirv-tools"]
+	path = sources/dependencies/spirv-tools
+	url = https://github.com/KhronosGroup/SPIRV-Tools.git

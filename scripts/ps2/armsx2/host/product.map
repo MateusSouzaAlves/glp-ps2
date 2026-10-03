@@ -1,0 +1,5 @@
+{
+    global:
+        Java_com_mateussouza_emuorbit_advance_emulator_playstation2_PlayStation2ArmsNativePort_*;
+    local: *;
+};

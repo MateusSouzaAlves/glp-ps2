@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "scope": "Native ARMSX2 component and build/host/interface sources only; not a combined application compliance verdict",
+  "application_source_commit": "84450765c330689fcb634e2d0a96eb12c962bb22",
+  "upstream_gitlinks": [
+    {
+      "path": "sources/armsx2",
+      "repository": "https://github.com/ARMSX2/ARMSX2.git",
+      "revision": "ae93e16a0cc4bad8d4679312e921b158b70a8131",
+      "tree": "dbb08dd196041dc31d9b641027f1e603150a3823"
+    },
+    {
+      "path": "sources/dependencies/glslang",
+      "repository": "https://github.com/KhronosGroup/glslang.git",
+      "revision": "09c541ee5b22bbac307987b50d86ec2b4f683d75",
+      "tree": "c81e4deabb00783942e3e06e925f0319dc2cdfee"
+    },
+    {
+      "path": "sources/dependencies/spirv-headers",
+      "repository": "https://github.com/KhronosGroup/SPIRV-Headers.git",
+      "revision": "465055f6c9128772e20082e893d974146acf7a02",
+      "tree": "61e7fa25557919e70a7cf4584db8807b2a4bd697"
+    },
+    {
+      "path": "sources/dependencies/spirv-tools",
+      "repository": "https://github.com/KhronosGroup/SPIRV-Tools.git",
+      "revision": "e4bceacf59fdfe742047e94e41ef65a48999a0dd",
+      "tree": "bda78c7dc69071474a43dccd7ca99d5c69c2b538"
+    }
+  ],
+  "exact_application_inputs": [
+    {
+      "path": "config/ps2-armsx2-candidate.json",
+      "sha256": "dd0035c0ba74cde374380eab51abba260b71a1cf364a3f4b0f320a5b7496208d",
+      "bytes": 2441
+    },
+    {
+      "path": "config/ps2-armsx2-resources.json",
+      "sha256": "1ffbe541060dfd7f362fff1352ece5757a15439dc6cdaca4ee5eec115dfbe272",
+      "bytes": 8053
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/libretro_vulkan_abi.h",
+      "sha256": "79f54514bdb2ccfc4685ee3c5a0a28715298a615ec478a141c8bb7826d2100ed",
+      "bytes": 4285
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/vulkan_render_host.cpp",
+      "sha256": "4b3f9b36fe5274597293fb70a31c6ed3574222469e6f7b0fc1359643d638369e",
+      "bytes": 48338
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/vulkan_render_host.h",
+      "sha256": "31133cb05886a1dcb19a3b11077233a1ec17e600f642060c32ad9b00c4643fe6",
+      "bytes": 4777
+    },
+    {
+      "path": "scripts/build-armsx2-candidate.ps1",
+      "sha256": "051ef8bfafc0e861c38496b6e59f136aa1ac40fee906a4356c86ba6a601de3b6",
+      "bytes": 3538
+    },
+    {
+      "path": "scripts/prepare-armsx2-source.ps1",
+      "sha256": "f8f8ace1d915e1246af66c7085f086ec5fc1ad8bb604895d7ce381bf2a7c3b1d",
+      "bytes": 6674
+    },
+    {
+      "path": "scripts/ps2/armsx2/bootstrap-proof/boot_probe.cpp",
+      "sha256": "29793aca1b0da55628763efad7184c052f70806ae2448d1b50f9810662a08df2",
+      "bytes": 21923
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/CMakeLists.txt",
+      "sha256": "e49d47161cc77e08a7f2ed99ad5a1565617341acf1a01a701a5f240b1195a94e",
+      "bytes": 10802
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/abi_probe.c",
+      "sha256": "650e3f86d86de8d38800370af2a2603ea33d42c9776db3730c7d34b1369988df",
+      "bytes": 3941
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/audio-output-source.cmake",
+      "sha256": "cc82e22802c22df2305fc625f4decd1d4df5143cb2fa58e9fe15aebcf9ca1b97",
+      "bytes": 1187
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/disabled-input-source.cmake",
+      "sha256": "564f314f748c2b1b56bc393a6ad6010f76d7d9a0e7d3c4a4982950d2aab0146a",
+      "bytes": 2945
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/lifecycle-extension.inc",
+      "sha256": "86131536351e9408db8dc5996dbf4895f77f6179e33fe19a566335c7a1b76537",
+      "bytes": 7115
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/lifecycle-source.cmake",
+      "sha256": "6d3bb026402c4d280474b6eea7421673c6c13030eb5b5f27ba3979588919c8e2",
+      "bytes": 1821
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/mobile-osd-source.cmake",
+      "sha256": "6ca0f84d11f76abd208f58c9bb3976d2bf2e955408c37932c21f4bb349c9de59",
+      "bytes": 1616
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/relocate-dependencies.cmake",
+      "sha256": "0b1c5b10802ff3091a2f52c40ae3d068e2ebaef9cbecb48b69493ebe124061c1",
+      "bytes": 1401
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/runtime-path-source.cmake",
+      "sha256": "452ff3a21de2864ce734e079de4292d15e6806a2e61604c7044dfa4a336b841e",
+      "bytes": 3784
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/stage-resources.cmake",
+      "sha256": "3bc461e6bffa09c0ea5e90ddf889b7d0fc2d18b4091aba525929333fb8cfa4d6",
+      "bytes": 4953
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/state-writer-source.cmake",
+      "sha256": "6f49cf55136d8aa55f58236414e92ebd58f24117fca519adce3b9058fbeb544c",
+      "bytes": 2087
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/audio_peak_guard.h",
+      "sha256": "956416cc0fbcd97f10434aae2f41d26920ce04dc311cd1f63bd61b9ca702092c",
+      "bytes": 1415
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/audio_peak_guard_probe.cpp",
+      "sha256": "a6582fb7ac018ff998a0db54787d85aa2c3fd411df4b08fa6bd4a7f1f5583c1f",
+      "bytes": 1639
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/cpu_reply.h",
+      "sha256": "fccdd6f0c850e51372377817102213e107a07755ede67d57f45c1f4fe5774ab6",
+      "bytes": 1918
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/cpu_reply_probe.cpp",
+      "sha256": "062a05c9f8341ba01206ed0b0024b25b725dd81e6a6b993d186f10067bd4e9c4",
+      "bytes": 2167
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/host_api.h",
+      "sha256": "3024d1c9bad32844a3ac45e5aa8b3b6fdf77c72874efe9418174e2550b06e894",
+      "bytes": 1351
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/input_snapshot.h",
+      "sha256": "b9c85630a118d9157ae5c10db023cce5a3b5aa99084635c9e9df4e002a30e352",
+      "bytes": 2153
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/input_snapshot_probe.cpp",
+      "sha256": "1b46215035c6b30f5f029990362e2491537a26f3801af7c9a9a4042e64101355",
+      "bytes": 2563
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/libretro_frontend.h",
+      "sha256": "96d3b5f7b6b333c5dbb0a6495681bffcbcd7c440df47c172c1d093bb5d21588a",
+      "bytes": 10385
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/native_session.cpp",
+      "sha256": "8c758244a0c896fa569b650812941d3a4f0ad59800e64b6fbac6ef2b7fef75bf",
+      "bytes": 18487
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/pcm_mailbox.h",
+      "sha256": "5c1dc00116cfcbd750ebb135d36e81f53f2436f6da00a48bdc55e03b62032768",
+      "bytes": 2907
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/pcm_mailbox_probe.cpp",
+      "sha256": "7996493d03ea0a1956d1386759512cb176181a59a8510a89a2b77cd644e134cf",
+      "bytes": 2194
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/product.map",
+      "sha256": "838eef085560870f89f76a69d6cda0f27d3f0238edd0295d88c8376f45046902",
+      "bytes": 134
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/stdlib_rtti_diagnostic.cpp",
+      "sha256": "25a547cbad82ba8325e832d2fd6b70c97163e5c7a0970e4bfd433fca79389920",
+      "bytes": 427
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/surface-rebind-source.cmake",
+      "sha256": "3cb34751abe7088200b52addef13f807d5c64846393f2ecf299232629e263a94",
+      "bytes": 2717
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/surface-rebind.inc",
+      "sha256": "ae6c16551c71139dd522e4d40c0699b1517120c9b9d366c69f8cee0320a24a1a",
+      "bytes": 3985
+    }
+  ],
+  "native_interface_origin_sha256": "4d793d72c6ae61aac118ad61195cc97e24e246802b1d664517b93b24c3dc7fce",
+  "native_interface_export": {
+    "path": "bindings/com/mateussouza/emuorbit/advance/emulator/playstation2/PlayStation2ArmsNativePort.java",
+    "sha256": "ede1b30f9d92ccbb072891c28f285c4512e7fea0a8625c0ce384f7d62b2908c4",
+    "bytes": 1470
+  },
+  "native_interface_role": "Nine declarations extracted; no private Java frontend/database/UI copied",
+  "toolchain": {
+    "ndk": "29.0.14206865",
+    "cmake": "3.22.1",
+    "abi": "arm64-v8a",
+    "minimum_api_to_verify": 26,
+    "cpu_baseline_to_verify": "armv8-a",
+    "host_page_size_bytes": 4096,
+    "elf_alignment_bytes": 16384,
+    "runtime_16k_pages_verified": false,
+    "audio_rate_hz": 48000
+  },
+  "excluded": [
+    "BIOS",
+    "ROMs",
+    "saves",
+    "keys",
+    "signing",
+    "private Android UI",
+    "Room database",
+    "analytics",
+    "application assets",
+    "official APK/binaries"
+  ]
+}
