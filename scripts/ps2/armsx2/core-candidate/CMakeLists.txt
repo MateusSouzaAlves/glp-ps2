@@ -13,6 +13,14 @@ get_filename_component(ARMSX2_SOURCE_DIR "${ARMSX2_SOURCE_DIR}" REALPATH)
 get_filename_component(ARMSX2_DEPENDENCY_DIR "${ARMSX2_DEPENDENCY_DIR}" REALPATH)
 file(READ "${CMAKE_CURRENT_LIST_DIR}/../../../../config/ps2-armsx2-candidate.json" candidate)
 string(JSON expected_revision GET "${candidate}" revision)
+# libjpeg-turbo defaults BUILD to today's date. That changes the core hash used
+# by state guards even with identical VM sources. Pin the dependency label from
+# the qualified predecessor; do not normalize/ignore hashes at runtime.
+string(JSON jpeg_build_label GET "${candidate}" reproducible_metadata libjpeg_build)
+if(NOT jpeg_build_label MATCHES "^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$")
+    message(FATAL_ERROR "Explicit reproducible libjpeg build label required.")
+endif()
+set(BUILD "${jpeg_build_label}" CACHE STRING "Pinned libjpeg component build label" FORCE)
 find_package(Git REQUIRED)
 execute_process(COMMAND "${GIT_EXECUTABLE}" -C "${ARMSX2_SOURCE_DIR}" rev-parse HEAD
     OUTPUT_VARIABLE source_revision OUTPUT_STRIP_TRAILING_WHITESPACE

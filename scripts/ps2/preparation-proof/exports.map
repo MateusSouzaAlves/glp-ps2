@@ -1,0 +1,8 @@
+{
+    global: JNI_OnLoad;
+        Java_com_mateussouza_emuorbit_advance_data_storage_playstation_PlayStation2NativeChdSource_nativeAbi;
+        Java_com_mateussouza_emuorbit_advance_data_storage_playstation_PlayStation2NativeChdSource_nativeOpen;
+        Java_com_mateussouza_emuorbit_advance_data_storage_playstation_PlayStation2NativeChdSource_nativeRead;
+        Java_com_mateussouza_emuorbit_advance_data_storage_playstation_PlayStation2NativeChdSource_nativeClose;
+    local: *;
+};

@@ -33,12 +33,13 @@ def verify_files(root, records):
 
 def verify(root=ROOT):
     manifest = json.loads((root / "component-source-manifest.json").read_text(encoding="utf-8"))
-    records = manifest["exact_application_inputs"] + [manifest["native_interface_export"]]
+    records = manifest["exact_application_inputs"] + [manifest["native_interface_export"]] + manifest.get("support_inputs", [])
     allowed = verify_files(root, records)
     fixed = {"README.md", "LICENSE", "NOTICES.md", ".gitignore", ".gitattributes", ".gitmodules",
              "component-source-manifest.json", "verification.json",
              "scripts/build-public-core.ps1", "scripts/verify-public-source.py",
-             "scripts/test-public-source.py"}
+             "scripts/test-public-source.py", "SOURCE_REFRESH.md", "scripts/verify-source-snapshot.py",
+             "releases/component-source-2026-10-24/manifest.json", "releases/native-source-2026-10-03/verification.json"}
     modules = {item["path"]: item for item in manifest["upstream_gitlinks"]}
     for name, item in modules.items():
         module = root / name

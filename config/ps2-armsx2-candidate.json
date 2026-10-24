@@ -4,6 +4,10 @@
   "repository": "https://github.com/ARMSX2/ARMSX2.git",
   "revision": "ae93e16a0cc4bad8d4679312e921b158b70a8131",
   "release": "2.7.2",
+  "reproducible_metadata": {
+    "libjpeg_build": "20261016",
+    "reason": "Preserve the qualified predecessor core bytes; this is a dependency build label, not the app release date."
+  },
   "license_file": "COPYING.GPLv3",
   "license_sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
   "core_spdx": "GPL-3.0-or-later",

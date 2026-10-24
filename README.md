@@ -114,3 +114,14 @@ terceiros e não declara o aplicativo privado inteiro licenciado pela GPL.
 
 Referências: [GPLv3](https://www.gnu.org/licenses/gpl.en.html) e
 [FAQ de ligação da GNU](https://www.gnu.org/licenses/gpl-faq.en.html#GPLStaticVsDynamic).
+
+
+## Component source refresh — 2026-10-24
+
+This tip updates the component sources/recipes identified in the source
+snapshot manifest. Older tags/commits remain historical snapshots. It does
+not assert that this entire current snapshot was the source of an earlier
+Play release, and does not certify the closed combined app or publish its
+remaining private host. References above to older artifact hashes or private
+application tags retain historical scope; they are not publicly available
+host-source substitutes. See SOURCE_REFRESH.md and releases/component-source-2026-10-24/manifest.json.

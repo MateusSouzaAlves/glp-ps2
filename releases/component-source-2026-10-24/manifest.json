@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "snapshot": "component-source-2026-10-24",
+  "date": "2026-10-24",
+  "repository": "https://github.com/MateusSouzaAlves/glp-ps2",
+  "scope": "Reviewed component-source refresh, not all sources of the combined closed application or a legal compliance certificate.",
+  "supersedes_public_commit": "b355e7d218caf5a45b267109e0911f8e3d749e5d",
+  "private_source_base_reference": "351b21363200a74b9ed8e6c46303f02b05ffff84",
+  "artifact_binding": {
+    "status": "NOT_ASSERTED_FOR_HISTORICAL_PLAY_OR_ENTIRE_CURRENT_PRIVATE_WORKTREE",
+    "reason": "Exact files and derivations recorded here; old snapshot tags remain immutable. Complete distributed artifact correspondence is a separate verification."
+  },
+  "verification": {
+    "checks": [
+      "PASS_STRICT_NATIVE_SOURCE_PROVENANCE_AND_SIX_NEGATIVE_TESTS",
+      "PASS_NEUTRAL_CHD_DECODER_BUILD_54_STEPS_NO_VM_NO_BIOS"
+    ],
+    "full_app_build_or_gameplay": false,
+    "save_update_test": false,
+    "legal_combined_work_certificate": false
+  },
+  "upstream_gitlinks": [
+    {
+      "path": "sources/armsx2",
+      "commit": "ae93e16a0cc4bad8d4679312e921b158b70a8131"
+    },
+    {
+      "path": "sources/dependencies/glslang",
+      "commit": "09c541ee5b22bbac307987b50d86ec2b4f683d75"
+    },
+    {
+      "path": "sources/dependencies/spirv-headers",
+      "commit": "465055f6c9128772e20082e893d974146acf7a02"
+    },
+    {
+      "path": "sources/dependencies/spirv-tools",
+      "commit": "e4bceacf59fdfe742047e94e41ef65a48999a0dd"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 150,
+      "sha256": "ec0535397fad5b2f631ad091579b6e0c551acfb1f0b4e1b072da34acb55165d9"
+    },
+    {
+      "path": ".gitignore",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 240,
+      "sha256": "500f228e6855851efa09fb82a2355d76d76c612b21848cbeb63e052942b0d9cc"
+    },
+    {
+      "path": ".gitmodules",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 519,
+      "sha256": "d60ec52ca588254da132428a524b1b7584dda2a53c3f136a41018dba897916e4"
+    },
+    {
+      "path": "DECODER_SOURCE.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 955,
+      "sha256": "41315b33211632df744d633208cd70edaa72a80b5801e1428e488566910c84ac"
+    },
+    {
+      "path": "LICENSE",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "NOTICES.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 7413,
+      "sha256": "9354d376d52ab814668bf4a9cc676e6ecd581023341f6e94a59b6f2c91327d5d"
+    },
+    {
+      "path": "README.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 6638,
+      "sha256": "1fa2b70d4be688886de38c3a4bfa12541ea9a48740d45a6d506168d013df251a"
+    },
+    {
+      "path": "SOURCE_REFRESH.md",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 990,
+      "sha256": "fcc6295ff27a93e80c1cfdef103f56378523102f73c0cee32099fde15f8447a4"
+    },
+    {
+      "path": "bindings/com/mateussouza/emuorbit/advance/emulator/playstation2/PlayStation2ArmsNativePort.java",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1449,
+      "sha256": "eca56908834392af7a4ec15dfb0f515d329cdee31dc4a0a062b9b0747b990709"
+    },
+    {
+      "path": "component-source-manifest.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 10708,
+      "sha256": "fd60304dc69ce8f8761b0b040f20258eb2849c30ae3e07dbbc674b60c6a18ad3"
+    },
+    {
+      "path": "config/ps2-armsx2-candidate.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2578,
+      "sha256": "71658b62caa566d7acf97bd34983e73999bcbc7b21df91860a8500c3c7b2fbf6"
+    },
+    {
+      "path": "config/ps2-armsx2-resources.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 7846,
+      "sha256": "0b39f870dcb35535e815b0a68f5cabd3624c0face9fbfb2c65a92cbc7c770409"
+    },
+    {
+      "path": "config/ps2-core.lock.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1773,
+      "sha256": "e7da9302527b8d66c6d7632391c58a910a92fa6f09eb084fe0f72ddb6c7cf32d"
+    },
+    {
+      "path": "config/ps2-proof-components.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3662,
+      "sha256": "ee505c336beac212ac7b9fea152604af38e75c7c6fd5e619c18775ebb9bb5916"
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/libretro_vulkan_abi.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4159,
+      "sha256": "9bc85df7a5ab6ce0e9b11b81ded8c45d48c760bae9ec31bbbb80808467600f06"
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/vulkan_render_host.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 47205,
+      "sha256": "1de359c1dd51dea5e1e9b67cd49d87de715bd9e25e87ec51b39db063e0b3a31d"
+    },
+    {
+      "path": "nintendo3dscore/src/main/cpp/vulkan_render_host.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4642,
+      "sha256": "a171f260e355f53a7168a64ffc23c09449b44e8d834fefacd2787c7e99454882"
+    },
+    {
+      "path": "releases/native-source-2026-10-03/verification.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1539,
+      "sha256": "9d45ae97729192700f0130af7285ea145075cd972852c65cec86441bbdb1cc84"
+    },
+    {
+      "path": "scripts/build-armsx2-candidate.ps1",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3476,
+      "sha256": "2b167db96e2b7eb2d2350fd89f9710cdc109a19259a85510a9a2d18221e15ebd"
+    },
+    {
+      "path": "scripts/build-public-core.ps1",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4250,
+      "sha256": "8df02126c9190f31bc777835703ebd00294c4536b627be7120f95185bd4e2035"
+    },
+    {
+      "path": "scripts/build-public-decoder.py",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2187,
+      "sha256": "c0005321cc59080359c1f74f730e556f4eacb8c870a10236e99251e0d9df7f59"
+    },
+    {
+      "path": "scripts/prepare-armsx2-source.ps1",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 6566,
+      "sha256": "dbef5f0186599b0f691d376e85c49f014f0298c0d4cbb19e78e8592d047fe37b"
+    },
+    {
+      "path": "scripts/ps2/adapters/chd_bridge.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 10742,
+      "sha256": "0223ccf99e88d2c7665749f6ea9029b3f2e25f3a767d0f1eedf245951f7ec754"
+    },
+    {
+      "path": "scripts/ps2/armsx2/bootstrap-proof/boot_probe.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 21575,
+      "sha256": "76b9db8deff2b50171b36f7ebb6e5e18dd2cb6319119939fc9f92ced3e831f14"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/CMakeLists.txt",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 11194,
+      "sha256": "44d5933b789a90c0053b731bc8d414e54196cc8f5cdfc70c21f2ba41463a4c3a"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/abi_probe.c",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3869,
+      "sha256": "ed7e6c9edc04c94be4fe74085a3ffc5f7284d741de9e487a652bbdae54bb5207"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/audio-output-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1173,
+      "sha256": "bfb71116dda348b92421632524e788b3ff2f0fe290c11cf01bfabe2f1129698f"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/disabled-input-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2901,
+      "sha256": "ba6ddf93895d69d6520287487b0126a1436978a49d317c0167bd6a67e010ccfb"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/lifecycle-extension.inc",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 6972,
+      "sha256": "2998320fa04a52505093b5afea454ec05f67fb5f6c2ec33e382a5db15066d5a9"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/lifecycle-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1791,
+      "sha256": "8ee74f027e5c344f0fc3b379a170d4ad80c6f23998b1e9316c5ef2c4b0d37a1c"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/mobile-osd-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1588,
+      "sha256": "4f71a7fe7ab5c10f5b2f0351d264b243ce28ee0f34872ec755a01a6719529a2a"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/relocate-dependencies.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1382,
+      "sha256": "db70e41060e0c3468e4b6198c4bfcca8025c6210a519822c139948f85d077faa"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/runtime-path-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3720,
+      "sha256": "a91940c5e4a90f2bc9e5a5ac086c39e449a90967046f6548b46affec22b68be8"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/stage-resources.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4855,
+      "sha256": "4912bb1505f41567f1122a15f6c1dd1ab3622593d9dc0e81d0c892c735e8be20"
+    },
+    {
+      "path": "scripts/ps2/armsx2/core-candidate/state-writer-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2054,
+      "sha256": "683afeacc94bca1407fea1963d0795d2a83d03a9d686b47f49fd02294cc5bcbe"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/audio_peak_guard.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2881,
+      "sha256": "db07c2d191ada2b369c707c1ec36a93865c8f65145b33b20ae2cb480837331a5"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/audio_peak_guard_probe.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3550,
+      "sha256": "f95f4e2e1346a464d4ba918772c412047a256cd85b35c5aea6865f0aee3a264f"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/cpu_reply.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1864,
+      "sha256": "682e0ac457949852143f5ba3dd035e666fa919ee0a8abdecd99fd8762af16ec3"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/cpu_reply_probe.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2118,
+      "sha256": "b0e00910dadbcfe55ad3d3383745167879960161beb044b7af8338b6f62035ef"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/host_api.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 1325,
+      "sha256": "45ff7c5912f7fcc2548232e7ca6ad10c8510d83fefa18191b8496e4f8bdcba64"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/input_snapshot.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2112,
+      "sha256": "40c109f042c673bea0beeb695db1ac151be329ba0c429096957f09602801ee23"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/input_snapshot_probe.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2523,
+      "sha256": "cbd32026d0b57f812567bee7a5c5c87dc1555da5e4c85514db64aec3fc8dd778"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/libretro_frontend.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 10180,
+      "sha256": "d8528297264e6daefeb00c88ff4de2714d52a8b0a8947ff1c404531fdcf788a2"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/native_session.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 18164,
+      "sha256": "55b926947246e5153775755183a40fb96ecf3a79a4399f13caaacb6f99ed13c9"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/pcm_mailbox.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2846,
+      "sha256": "c38ede5bfccdc029705c2145a220ace61ff27bd615dfc8dbce141bc112525d09"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/pcm_mailbox_probe.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2158,
+      "sha256": "a44dc50e4b22023695573adb641fca0a00e5fd794b06c686eb452fa0f144c6aa"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/product.map",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 129,
+      "sha256": "c18a90f03456dac09aabc911dc1d1a9b29451ca6d9c7a4e6533487470dd8d016"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/stdlib_rtti_diagnostic.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 416,
+      "sha256": "1af9d5b824de0348f0a5910a15af17eeeba6ca27222283d09d348b67e9fcd52c"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/surface-rebind-source.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2673,
+      "sha256": "f2d173b08acf1d6091bfda43622aacb4bcf797be5032484fe9d4472f720733bc"
+    },
+    {
+      "path": "scripts/ps2/armsx2/host/surface-rebind.inc",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3925,
+      "sha256": "5aefe842b267e982860065892806414a6276a035b4ad4f594b27d9a68fd79102"
+    },
+    {
+      "path": "scripts/ps2/decoder-host/CMakeLists.txt",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2516,
+      "sha256": "3571afd8899f4cd467593ae5b4fe1e20e1f308eb6db4bfdfb17c40a8b56f896e"
+    },
+    {
+      "path": "scripts/ps2/media-proof/bounded_chd_optical.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 11047,
+      "sha256": "10679769694b7c46307d016395ad2001aefbbcc4af8965941521cf67973e327b"
+    },
+    {
+      "path": "scripts/ps2/media-proof/bounded_chd_stream.cpp",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 8045,
+      "sha256": "d5e9ff3bede4f59c1d9e5916e3c7ead973b02ac65c68804e4d9e9d7f47200ae4"
+    },
+    {
+      "path": "scripts/ps2/media-proof/compressed_map_guard.h",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4174,
+      "sha256": "fc40acd0f23082d5c674268335df128e48b36a661b25bfd2d3744d87e771396f"
+    },
+    {
+      "path": "scripts/ps2/media-proof/patch-libchdr-read.cmake",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 4801,
+      "sha256": "2b28c9a69c814b853e61b9c9635496c24894779cfd65bbe97b94b785322b7180"
+    },
+    {
+      "path": "scripts/ps2/preparation-proof/exports.map",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 487,
+      "sha256": "e54be4a023882803043f0870d3816e2fe0fd2848bdda6ee91428066630f4850f"
+    },
+    {
+      "path": "scripts/test-public-source.py",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 2028,
+      "sha256": "a47528e4ce1b56b5b5c115dca574c4ae0ac16e437c33b971818aacedf15e9de0"
+    },
+    {
+      "path": "scripts/verify-public-source.py",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3060,
+      "sha256": "922648885fabfa7585d5c5f5ba26cc43bfbbeb132a26d97ea72ab6e0451187ee"
+    },
+    {
+      "path": "scripts/verify-source-snapshot.py",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 3431,
+      "sha256": "854b409cd620c16ef630e8aa22d43fc8cdfa37bded9d28c8c68fd17dba4e9c4b"
+    },
+    {
+      "path": "verification.json",
+      "normalization": "text-crlf-to-lf",
+      "normalized_bytes": 475,
+      "sha256": "5a155634e69ca139e323496c70a97bc4a9d5a504a61b8292ead1eed7ee8bdab7"
+    }
+  ]
+}

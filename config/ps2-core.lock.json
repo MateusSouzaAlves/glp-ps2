@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "name": "Play! (Libretro)",
+  "repository": "https://github.com/jpd002/Play-.git",
+  "revision": "83700b2c31e593bc94e845b4b31b797be84dda59",
+  "source_date_epoch": 1788461085,
+  "role": "pinned-source-for-product-and-isolated-proofs",
+  "ndk": "29.0.14206865",
+  "cmake": "3.22.1",
+  "cmake_banner": "cmake version 3.22.1-g37088a8-dirty",
+  "api": 26,
+  "abi": "arm64-v8a",
+  "dependencies": [
+    { "path": "deps/CodeGen", "repository": "https://github.com/jpd002/Play--CodeGen.git", "revision": "a5009f7dca062695b8e5aebbd71e67b4ddfa9251" },
+    { "path": "deps/Framework", "repository": "https://github.com/jpd002/Play--Framework.git", "revision": "587f278917acc0026bf5fc34b39f995fc26bd015" },
+    { "path": "deps/Dependencies", "repository": "https://github.com/jpd002/Play-Dependencies.git", "revision": "8a5f6b1dea0b888b5a42b821e79470142bbea4e3" },
+    { "path": "deps/libchdr", "repository": "https://github.com/jpd002/libchdr.git", "revision": "284e38b6e53e0a7270cc234934e45230ed915a25" },
+    { "path": "deps/Dependencies/ghc_filesystem", "repository": "https://github.com/gulrak/filesystem.git", "revision": "2a8b380f8d4e77b389c42a194ab9c70d8e3a0f1e" },
+    { "path": "deps/Dependencies/zstd", "repository": "https://github.com/facebook/zstd.git", "revision": "f8745da6ff1ad1e7bab384bd1f9d742439278e99" },
+    { "path": "deps/Dependencies/xxHash", "repository": "https://github.com/Cyan4973/xxHash.git", "revision": "e626a72bc2321cd320e953a0ccf1584cad60f363" }
+  ],
+  "flags": {
+    "ENABLE_AMAZON_S3": "OFF",
+    "BUILD_SHARED_LIBS": "OFF",
+    "WITH_SYSTEM_ZLIB": "ON",
+    "USE_GLES": "ON",
+    "ZSTD_LEGACY_SUPPORT": "OFF",
+    "PROFILE": "OFF",
+    "DEBUGGER_INCLUDED": "OFF",
+    "USE_AOT_CACHE": "OFF",
+    "BUILD_AOT_CACHE": "OFF"
+  }
+}

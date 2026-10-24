@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "scope": "Audited Play GLES/CHD product and isolated-proof source closure; package-specific SBOM generated separately",
+  "components": [
+    { "id": "libretro-api", "prefix": "<PLAY>/Source/ui_libretro/ext/", "license": "MIT", "license_path": "Source/ui_libretro/ext/libretro.h", "license_sha256": "D05624283C59E91E8B24471927F41FFD84EB01CCEF9BA0BFA14F697CF5150588" },
+    { "id": "play", "prefix": "<PLAY>/Source/", "license": "BSD-2-Clause-style", "license_path": "License.txt", "license_sha256": "E9089DA5950600267BB657503ABA6EB59CB679B455C2997D341D83144144DAAB" },
+    { "id": "codegen", "prefix": "<PLAY>/deps/CodeGen/", "license": "BSD-2-Clause-style", "license_path": "deps/CodeGen/License.txt", "license_sha256": "0ED1494D406DEF5805562B15067536E8E77DD8A164C5931B672A6DC9A18A646D" },
+    { "id": "framework", "prefix": "<PLAY>/deps/Framework/", "license": "BSD-2-Clause-style", "license_path": "deps/Framework/License.txt", "license_sha256": "E9089DA5950600267BB657503ABA6EB59CB679B455C2997D341D83144144DAAB" },
+    { "id": "bzip2", "prefix": "<PLAY>/deps/Dependencies/bzip2-1.0.6/", "license": "bzip2-1.0.6", "license_path": "deps/Dependencies/bzip2-1.0.6/LICENSE", "license_sha256": "ACE879711AAD0985482856336C66EB972C59B2B3268B4BA7CCA1FA162C52E931" },
+    { "id": "ghc-filesystem", "prefix": "<PLAY>/deps/Dependencies/ghc_filesystem/", "license": "MIT", "license_path": "deps/Dependencies/ghc_filesystem/LICENSE", "license_sha256": "41AF490F2D3DBEABA890CA8AD198BEDC604492E718E673D82F8EFF7A5E75ABD5" },
+    { "id": "zstd", "prefix": "<PLAY>/deps/Dependencies/zstd/", "license": "BSD-3-Clause (selected alternative)", "license_path": "deps/Dependencies/zstd/LICENSE", "license_sha256": "7055266497633C9025B777C78EB7235AF13922117480ED5C674677ADC381C9D8" },
+    { "id": "xxhash", "prefix": "<PLAY>/deps/Dependencies/xxHash/", "license": "BSD-2-Clause library (no GPL CLI)", "license_path": "deps/Dependencies/xxHash/xxhash.h", "license_sha256": "17973C0DC49D9854CA26CAA191F0E12F7A424B68858D9A78DE3860D959D85E4B" },
+    { "id": "lzma-sdk", "prefix": "<PLAY>/deps/libchdr/deps/lzma-24.05/", "license": "Public domain", "license_path": "deps/libchdr/deps/lzma-24.05/LICENSE", "license_sha256": "C1B2EE395989AD41C5C96C897450CCBBD7068B8DFFF60B7483CECC55AACA1A4B" },
+    { "id": "dr-flac", "prefix": "<PLAY>/deps/libchdr/include/dr_libs/", "license": "MIT-0 (selected alternative)", "license_path": "deps/libchdr/include/dr_libs/dr_flac.h", "license_sha256": "4C5B3012D56580EC42B1908EC3944B641ED681AA3DEB7E798DA445AF9799589F" },
+    { "id": "libchdr", "prefix": "<PLAY>/deps/libchdr/", "license": "BSD-3-Clause", "license_path": "deps/libchdr/LICENSE.txt", "license_sha256": "5838E1D0C13F30D20045E27C6C434E1851497C7EE56E7A13B5CA1E08ABC9CE40" },
+    { "id": "ndk-runtime-and-headers", "prefix": "<NDK>/", "license": "NDK NOTICE: cpufeatures Apache-2.0; libc++/libc++abi/libunwind Apache-2.0 WITH LLVM-exception; platform headers per NOTICE", "license_path": "<NDK>/NOTICE", "license_sha256": "FAF0DC52CF6CE9AB09A04B0C074A378DD2565EE1ED9BC1179D83793BCDBA012E" }
+  ],
+  "excluded": ["AltKit", "Nuanceur", "SQLite", "nlohmann_json", "SDWebImage", "GLEW", "unrar", "xxHash CLI", "Amazon S3", "OpenSSL", "ICU", "desktop/Android frontends", "upstream test targets"],
+  "platform_dynamic_libraries": ["libandroid.so", "liblog.so", "libGLESv3.so", "libEGL.so", "libaaudio.so", "libz.so", "libdl.so", "libm.so", "libc.so"],
+  "platform_library_note": "Union of optional proof modes: AAudio is a platform dependency only with PS2_ANDROID_AUDIO_PROOF; no Android audio implementation is redistributed. Exact NEEDED entries belong to each build record."
+}

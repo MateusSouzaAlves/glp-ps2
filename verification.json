@@ -1,34 +1,12 @@
 {
   "schema": 1,
-  "date": "2026-10-03",
-  "role": "native-component-source-reconstruction-not-combined-application-legal-verdict",
-  "application_source_commit": "84450765c330689fcb634e2d0a96eb12c962bb22",
-  "component_source_manifest_sha256": "fb75d22d6937ef53d8b4c0cd37a59b690eaf984ae99e19ffa7271264bd3de1d1",
-  "build": "PASS_FROM_PUBLIC_INPUTS_AND_FRESH_EXTERNAL_CACHE_NO_BIOS",
-  "abi": "arm64-v8a",
-  "api": 26,
-  "stl": "c++_static",
-  "ndk": "29.0.14206865",
-  "cmake": "3.22.1",
-  "source_inputs_verified": 34,
-  "upstream_gitlinks_verified": 4,
-  "resource_files_verified": 33,
-  "derived_cpp_byte_equal_to_product": [
-    "derived/armsx2/InputManager.cpp",
-    "derived/armsx2/Main.cpp",
-    "derived/armsx2/SaveState.cpp",
-    "derived/armsx2/VMManager.cpp",
-    "derived/armsx2-vulkan-host/vulkan_render_host.cpp"
+  "date": "2026-10-24",
+  "scope": "Source refresh; not a new complete VM binary reconstruction or combined application legal verdict",
+  "checks": [
+    "PASS_STRICT_NATIVE_SOURCE_PROVENANCE_AND_SIX_NEGATIVE_TESTS",
+    "PASS_NEUTRAL_CHD_DECODER_BUILD_54_STEPS_NO_VM_NO_BIOS"
   ],
-  "exports_equal_to_product": {"libarmsx2_core.so": 29, "libemuorbit_armsx2.so": 9},
-  "public_build_elf_sha256": {
-    "libarmsx2_core.so": "fed52bbc7fc0818fbe8c0834ca49d55da7017bd4c8d25054acc8b75d9dd85a53",
-    "libemuorbit_armsx2.so": "b98a46a1c5dc4b161600528a9207a28d53d7eb641160385012e405cf17359ba4"
-  },
-  "elf_byte_equal_to_product": false,
-  "claim": "Source/derivation/resource/ABI verified; do not infer byte-identical binary reproduction or gameplay coverage",
-  "jni_interface_compile": "PASS_JDK17_RELEASE8_ANDROID37_JAR",
-  "public_hash_path_negative_tests": "6_PASS",
-  "main_contract_tests_including_export_negatives": "682_PASS",
+  "previous_vm_build_record": "releases/native-source-2026-10-03/verification.json",
+  "full_vm_rebuilt_in_this_refresh": false,
   "firmware_roms_keys_or_saves_published": 0
 }
